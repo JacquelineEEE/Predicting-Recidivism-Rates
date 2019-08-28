@@ -10,9 +10,21 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 ### Contents
 **In this Repository**
+
 | Description | Link |
 | ----------- | ---- |
 | Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) |
+
+**In this Repository**
+
+| Description | Link |
+| --- | --- |
+| FEMA Lifelines Slides | [Link](./FEMA_Lifelines.pdf)|
+| FEMA Lifelines Code | [Link](./FEMA-Lifelines-Project.ipynb)|
+| Data Scraping Functions | [Link](./lifelinescrape.py)|
+| Datasets | [Link](./datasets)|
+| Images | [Link](./images)|
+| MIT License | [Link](./LICENSE.md)|
 
 ### Process
 1. Research
