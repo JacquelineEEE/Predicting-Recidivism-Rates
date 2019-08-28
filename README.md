@@ -22,7 +22,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 **Data Dictionaries**
 <details>
 <summary>Scraping/Initial CSVs</summary>
-  > [Priors Scrape csv](./datasets/my_data/priors_FINAL.csv)
+  > [Priors Scrape csv](../datasets/my_data/priors_FINAL.csv)
 >  [Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
   > [Merged csv](./datasets/my_data/complete_raw_df.csv) | This is the complete dataset used to begin the project
 >   [All Lifelines Link](./datasets/all_lifelines.csv)
