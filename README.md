@@ -1,8 +1,6 @@
 # Predicting Recidivism Rates
 This work is designed to support entities offering services to formerly incarcerated individuals. The dataset consists of individuals currently incarcerated in the Texas Prison System.
 
-It was important for me to have an opportunity to dive into each part of the data science workflow as thoroughly as possible. I wanted to gain experience in all aspects of the work, and sought out a problem that would offer challenges along each step. I found it in this work.
-
 
 ### Problem Statement:
 Is an inmate's initial crime and their age at the time it was committed predictive of recidivism?
@@ -10,6 +8,11 @@ Is an inmate's initial crime and their age at the time it was committed predicti
 ### Goal:
 To create a model that predicts the likelihood of recidivism for an inmate in an attempt to support the efforts of any entity providing services for previously incarcerated individuals.
 
+### Contents
+**In this Repository**
+| Description | Link |
+| --- | --- |
+| Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf)|
 
 ### Process
 1. Research
@@ -28,10 +31,9 @@ From here I considered what data I might want, and I started looking into the Hu
 The Texas Tribune became the exclusive source of my data for this project. Through this website I learned I could access all prisons in the Texas System and each current inmate.
 
 ## Data Collection
-> Beautiful Soup
-> Amazon Web Services
+> Beautiful Soup | Amazon Web Services
 
-This part of the project took an extensive amount of time and offered a great deal of learning opportunity. Creating effective, efficient, and intentional functions to scrape the levels of data needed was a days-long process of trial and error.
+This part of the project took an extensive amount of time and offered a great deal of learning opportunity. Creating effective, efficient, and intentional functions to scrape the data needed was a days-long process of trial and error.
 
 #### Highlights of learning:
 - the invaluable nature of `try/except` statements
