@@ -11,23 +11,15 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 ### Contents
 **In this Repository**
 
-| Name | Description | Link |
-| ---- | ----------- | ---- |
+| Name | Link | Description |
+| ---- | ---- | ----------- |
 | Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps |
 | Prep Code Notebooks | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
 | Project Code Notebooks | [Link](./Project_Notebooks) | EDA/Cleaning/Modeling/Summary Visualizations |
 | Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. Also the compas dataset from Propublica for reference. |
+| Functions | [Link](./Project_Notebooks/inmate_scrape.py) | The final functions used to scrape and save data from the [Texas Tribune Prison Main Page](https://www.texastribune.org/library/data/texas-prisons/) |
 
-**In this Repository**
 
-| Description | Link |
-| --- | --- |
-| FEMA Lifelines Slides | [Link](./FEMA_Lifelines.pdf)|
-| FEMA Lifelines Code | [Link](./FEMA-Lifelines-Project.ipynb)|
-| Data Scraping Functions | [Link](./lifelinescrape.py)|
-| Datasets | [Link](./datasets)|
-| Images | [Link](./images)|
-| MIT License | [Link](./LICENSE.md)|
 
 ### Process
 1. Research
