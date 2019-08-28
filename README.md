@@ -1,4 +1,4 @@
-# Predicting-Recidivism-Rates
+# Predicting Recidivism Rates
 This work is designed to support entities offering services to formerly incarcerated individuals. The dataset consists of individuals currently incarcerated in the Texas Prison System.
 
 It was important for me to have an opportunity to dive into each part of the data science workflow as thoroughly as possible. I wanted to gain experience in all aspects of the work, and sought out a problem that would offer challenges along each step. I found it in this work.
@@ -31,4 +31,18 @@ The Texas Tribune became the exclusive source of my data for this project. Throu
 > Beautiful Soup
 > Amazon Web Services
 
-This part of the project took an extensive amount of time and offered a great deal of learning opportunity. Creating effective, efficient, and intentional functions to scrape the levels of data needed was a days-long process of trial and error. 
+This part of the project took an extensive amount of time and offered a great deal of learning opportunity. Creating effective, efficient, and intentional functions to scrape the levels of data needed was a days-long process of trial and error.
+
+#### Highlights of learning:
+- the invaluable nature of `try/except` statements
+- automating `saving to a .csv` routinely within the function
+  -- building out a shell of the notebook from a partial .csv while the scrape is running
+- ensuring the same `unique identifier` for each observation is in all datasets intended to be merged (ie: names of individuals is not sufficient, a qualifying id or url tag is essential)
+- the scrape can take days (and days and days)
+
+#### Final Counts:
+- 56,000 unique inmate basic detail observations
+- 47,000 unique inmate prior detail observations
+- merged dataset with 47,000 unique inmates
+
+## Cleaning, Feature Engineering, & EDA
