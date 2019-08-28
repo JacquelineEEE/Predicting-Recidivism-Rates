@@ -11,7 +11,7 @@ Is an inmate's initial crime and their age at the time it was committed predicti
 To create a model that predicts the likelihood of recidivism for an inmate in an attempt to support the efforts of any entity providing services for previously incarcerated individuals.
 
 
-## Process
+### Process
 1. Research
 2. Data Collection
 3. Cleaning, Feature Engineering, & EDA
@@ -20,7 +20,15 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 6. Summary Statistics
 
 
-# Research
+## Research
 I began this project by looking into available government datasets. I also found Probublica's work exposing racial bias in the COMPAS algorithm (kaggle and research/explanatory articles). This allowed me to gain access to their process,  their notebooks of work, and their datasets.
 
-From here I considered what data I might want, and I started looking into the Huntsville State Penitentiary. 
+From here I considered what data I might want, and I started looking into the Huntsville State Penitentiary.
+
+The Texas Tribune became the exclusive source of my data for this project. Through this website I learned I could access all prisons in the Texas System and each current inmate.
+
+## Data Collection
+> Beautiful Soup
+> Amazon Web Services
+
+This part of the project took an extensive amount of time and offered a great deal of learning opportunity. Creating effective, efficient, and intentional functions to scrape the levels of data needed was a days-long process of trial and error. 
