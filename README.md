@@ -41,8 +41,8 @@ This part of the project took an extensive amount of time and offered a great de
 - the scrape can take days (and days and days)
 
 #### Final Counts:
-- 56,000 unique inmate basic detail observations
-- 47,000 unique inmate prior detail observations
+- `56,000` unique inmate basic detail observations
+- `47,000` unique inmate prior detail observations
 - merged dataset with 47,000 unique inmates
 
 ## Cleaning, Feature Engineering, & EDA
