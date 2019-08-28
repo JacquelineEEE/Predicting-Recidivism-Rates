@@ -16,10 +16,18 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 | Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps |
 | Prep Code Notebooks | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
 | Project Code Notebooks | [Link](./Project_Notebooks) | EDA/Cleaning/Modeling/Summary Visualizations |
-| Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. Also the compas dataset from Propublica for reference. |
+| Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. The [Propublica COMPAS datasets](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) are also there for reference. |
 | Functions | [Link](./Project_Notebooks/inmate_scrape.py) | The final functions used to scrape and save data from the [Texas Tribune Prison Main Page](https://www.texastribune.org/library/data/texas-prisons/) |
 
+**Data Dictionaries**
+<details>
+<summary>Scraping/Initial CSVs</summary>
+> [Priors Scrape csv](./datasets/my_data/priors_FINAL.csv)
+> [Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
+> [Merged csv](./datasets/my_data/complete_raw_df.csv) | This is the complete dataset used to begin the project
 
+| Data | Type | Description |
+| --- | --- | :--- |
 
 ### Process
 1. Research
