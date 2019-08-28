@@ -11,8 +11,8 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 ### Contents
 **In this Repository**
 | Description | Link |
-| --- | --- |
-| Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf)|
+| ----------- | ---- |
+| Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) |
 
 ### Process
 1. Research
