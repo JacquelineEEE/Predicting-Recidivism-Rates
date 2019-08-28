@@ -11,9 +11,12 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 ### Contents
 **In this Repository**
 
-| Description | Link |
-| ----------- | ---- |
-| Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) |
+| Name | Description | Link |
+| ---- | ----------- | ---- |
+| Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps |
+| Prep Code Notebooks | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
+| Project Code Notebooks | [Link](./Project_Notebooks) | EDA/Cleaning/Modeling/Summary Visualizations |
+| Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. Also the compas dataset from Propublica for reference. |
 
 **In this Repository**
 
