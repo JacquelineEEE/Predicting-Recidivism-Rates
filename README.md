@@ -33,7 +33,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 **Priors csv**
 
-Each crime is labeled crime_0, _1, _2 _ 
+Each crime is labeled crime_0,
 | Data | Type | Description |
 | --- | --- | :--- |
 | name | string | inmate's name |
