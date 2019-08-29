@@ -24,7 +24,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 **Data Dictionaries**
 <details>
-<summary>_Scraping/Initial Datasets_</summary>
+<summary> Scraping/Initial Datasets </summary>
 
 >  [Priors csv](./datasets/my_data/priors_FINAL.csv)
 
@@ -67,7 +67,7 @@ This is the personal information of each inmate.
 </details>
 
 <details>
-<summary> _Model Ready Dataset_ </summary>
+<summary> Model Ready Dataset </summary>
 
 >  [Model Ready Dataset](./datasets/my_data/complete_model_ready.csv)
 
