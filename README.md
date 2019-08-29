@@ -21,13 +21,17 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 | Functions | [Link](./Project_Notebooks/inmate_scrape.py) | The final functions used to scrape and save data from the [Texas Tribune Prison Main Page](https://www.texastribune.org/library/data/texas-prisons/) |
 
 
+
 **Data Dictionaries**
 <details>
 <summary>_Scraping/Initial Datasets_</summary>
 
 >  [Priors csv](./datasets/my_data/priors_FINAL.csv)
+
 >  [Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
+
 >  [Merged csv](./datasets/my_data/complete_raw_df.csv)
+
 
 **Priors csv**
 
@@ -41,6 +45,7 @@ All inmates have a `pr_crime_0`, which is their current offense. Some inmates ha
 | pr_commit_date_0 | string | the date this offense was committed; `pr_commit_date_1`, `_2`, `_3` also present |
 | pr_term_0 | string | the length of time of the sentence; `pr_term_1`, `_2`, `_3` also present |
 | pr_begins_0 | string | the first day of the sentence; `pr_begins_1`, `_2`, `_3` also present  |
+
 
 **Inmate Details csv**
 
@@ -68,9 +73,9 @@ This is the personal information of each inmate.
 
 **Model Ready Dataset**
 
-This is the cleaned dataset with features ready to be trained. Steps that were taken are explained below in the process section of the README. These features have been added to the original dataset, and the descriptions below address added or altered features exclusively.
+This is the `cleaned dataset` with features ready to be trained. Steps that were taken are explained below in the `process section` of the README. These features have been added to the original dataset, and the descriptions below address added or altered features exclusively.
 
-17 types of crimes were categorized and made into dummy variables. The remaining crimes were distributed in a category called `other_crime`. Only one is represented in the dictionary below. Details about the categories are discussed in the `process` section of the README. Additionally, `101 prisons` were represented in the final dataset, and dummy variables were created. The base variable name is used to represent all below. `Ages` and `terms` were converted to floats and binned to be able to check each within the model. For both, the floats were used as features. Both are shown below.
+17 types of crimes were categorized and made into dummy variables. The remaining crimes were distributed in a category called `other_crime`. Only one is represented in the dictionary below. Details about the categories are discussed in the `process` section of the README. Additionally, `101 prisons` were represented in the final dataset, and dummy variables were created. The base variable name is used to represent all below. `Ages` and `terms` were converted to floats and binned to be able to check each within the model. For both, the floats were used as features. 
 
 | Data | Type | Description |
 | --- | --- | :--- |
@@ -85,7 +90,7 @@ This is the cleaned dataset with features ready to be trained. Steps that were t
 | commit_age | float | the age of each inmate at the time the feature crime occurred |
 | feature_term_flt | float | the years, months, and days of each inmate's term in a numerical float |
 | term_binned_ | int | ``{1: remaining term in that range, 0: not}``; in years: `Less than 1`, `1_to_5`, `11_15`, `16_20`, `21_30`, `31_40`, `40+` |
-| age_binned_ | int | ``{1: age in that range, 0: not}``; under 18, then mostly 10-year increments, above 70 |
+| age_binned_ | int | ``{1: age in that range, 0: not}``; `Under 18`, `18 to 30`, `31 to 40`, `41 to 50`, `51 to 60`, `61 to 70`, `Above 70` |
 
 </details>
 
