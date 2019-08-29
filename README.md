@@ -25,7 +25,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 <details>
 <summary>Scraping/Initial CSVs</summary>
 
->  [Priors Scrape csv](./datasets/my_data/priors_FINAL.csv)
+>  [Priors csv](./datasets/my_data/priors_FINAL.csv)
 
 >  [Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
 
@@ -33,16 +33,33 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 **Priors csv**
 
-Each crime is labeled crime_0,
+All inmates have a `pr_crime_0`, which is their current offense. Some inmates have additional priors, and these are identified as pr_crime_1, pr_crime_2, and pr_crime_3. If an inmate does not have any or all of these priors, these cells for that inmate are filled with `'No_data'`. Connected to each offense is `pr_commit_date`, `pr_term`, and `pr_begins`. Below each of these is listed only once. However, each inmate could have information in some or all of these. Pr_crime_3 is their oldest prior, whereas pr_crime_1 is their most recent. This information was scraped from the [Texas Tribune](https://www.texastribune.org/library/data/texas-prisons/units).
 
 | Data | Type | Description |
 | --- | --- | :--- |
 | name | string | inmate's name |
 | TDCJ_ID | int | unique identification number for each inmate |
-| pr_crime_0 | string | current offense |
-| pr_crime_1 | string | most recent prior; cell filled as `'No_data'` if it doesn't exist |
-| pr_crime_2 | string | second prior offense; filled as `'No_data'` if it doesn't exist |
-| pr_crime_3 | string | third prior offense; filled as `'No_data'` if it doesn't exist |
+| pr_crime | string | current offense |
+| pr_commit_date | string | the date this offense was committed |
+| pr_term | string | the length of time of the sentence |
+| pr_begins | string | the first day of the sentence |
+
+**Inmate Details csv**
+
+This is the personal information of each inmate.
+
+| Data | Type | Description |
+| --- | --- | :--- |
+| name | string | inmate's name |
+| sex | string | 'Male', 'Female' |
+| race | string | each inmate's race |
+| age | string | current age |
+| max_sentence | string | the maximum number of years they can stay in prison for this offense |
+| prison_unit | string | the prison they are located |
+| DOB | string | each inmate's date of birth |
+| home_county | string | each inmate's home county |
+| TDCJ_ID | int | unique identification number for each inmate |
+| proj_release_date | string | an inmate's projected release date |
 
 </details>
 
