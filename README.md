@@ -54,7 +54,7 @@ This is the personal information of each inmate.
 | sex | string | 'Male', 'Female' |
 | race | string | each inmate's race |
 | age | string | current age |
-| max_sentence | string | the maximum number of years they can stay in prison for this offense |
+| max_sentence | string | each inmate's maximum sentence|
 | prison_unit | string | the prison they are located |
 | DOB | string | each inmate's date of birth |
 | home_county | string | each inmate's home county |
