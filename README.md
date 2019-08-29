@@ -112,7 +112,9 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 ## Process Details:
 ### Step 1: Research
 > What data do I want?
+
 > What data is available?
+
 > What can I actually obtain?
 
 I began this project by looking into available government datasets. I also found Probublica's work exposing racial bias in the COMPAS algorithm (kaggle and research/explanatory articles). This allowed me to gain access to their process,  their notebooks of work, and their datasets.
