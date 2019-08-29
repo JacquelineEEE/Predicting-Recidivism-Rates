@@ -103,8 +103,7 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 
 ## Process
 **1. Research**
-
-**2. Data Collection**
+ **2. Data Collection**
 
 **3. Cleaning, Feature Engineering, & EDA**
 
