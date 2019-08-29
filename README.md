@@ -25,9 +25,9 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 <details>
 <summary>Scraping/Initial CSVs</summary>
 
-|[Priors Scrape csv](../datasets/my_data/priors_FINAL.csv)
+>  |[Priors Scrape csv](../datasets/my_data/priors_FINAL.csv)
 |[Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
-|[Merged csv](./datasets/my_data/complete_raw_df.csv) 
+|[Merged csv](./datasets/my_data/complete_raw_df.csv)
 
 | Data | Type | Description |
 | --- | --- | :--- |
