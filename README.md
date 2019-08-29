@@ -31,8 +31,17 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 >  [Merged csv](./datasets/my_data/complete_raw_df.csv)
 
+**Priors csv**
+
+Each crime is labeled crime_0, _1, _2 _ 
 | Data | Type | Description |
 | --- | --- | :--- |
+| name | string | inmate's name |
+| TDCJ_ID | int | unique identification number for each inmate |
+| pr_crime_0 | string | current offense |
+| pr_crime_1 | string | most recent prior; cell filled as `'No_data'` if it doesn't exist |
+| pr_crime_2 | string | second prior offense; filled as `'No_data'` if it doesn't exist |
+| pr_crime_3 | string | third prior offense; filled as `'No_data'` if it doesn't exist |
 
 </details>
 
