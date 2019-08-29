@@ -180,7 +180,7 @@ Almost all of the data had to be manipulated or converted from its original form
 This was a new challenge for me, because it was the first time there was inconsistency in the structure of the strings.
 This is a sample of what some of the unique terms, as strings, were:
 
-> ![Unique Terms](/images/unique_terms.pdf)
+[Unique Terms](./images/unique_terms.pdf)
 
 
 </details>
