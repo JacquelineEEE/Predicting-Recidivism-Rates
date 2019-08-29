@@ -53,7 +53,7 @@ This is the personal information of each inmate.
 | name | string | inmate's name |
 | sex | string | 'Male', 'Female' |
 | race | string | each inmate's race |
-| age | string | current age |
+| age | int | current age |
 | max_sentence | string | each inmate's maximum sentence|
 | prison_unit | string | the prison they are located |
 | DOB | string | each inmate's date of birth |
