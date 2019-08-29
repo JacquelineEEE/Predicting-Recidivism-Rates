@@ -23,12 +23,10 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 **Data Dictionaries**
 <details>
-<summary>Scraping/Initial CSVs</summary>
+<summary>_Scraping/Initial Datasets_</summary>
 
 >  [Priors csv](./datasets/my_data/priors_FINAL.csv)
-
 >  [Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
-
 >  [Merged csv](./datasets/my_data/complete_raw_df.csv)
 
 **Priors csv**
@@ -39,10 +37,10 @@ All inmates have a `pr_crime_0`, which is their current offense. Some inmates ha
 | --- | --- | :--- |
 | name | string | inmate's name |
 | TDCJ_ID | int | unique identification number for each inmate |
-| pr_crime | string | current offense |
-| pr_commit_date | string | the date this offense was committed |
-| pr_term | string | the length of time of the sentence |
-| pr_begins | string | the first day of the sentence |
+| pr_crime_0 | string | current offense; `pr_crime_1`, `_2`, `_3` also present |
+| pr_commit_date_0 | string | the date this offense was committed; `pr_commit_date_1`, `_2`, `_3` also present |
+| pr_term_0 | string | the length of time of the sentence; `pr_term_1`, `_2`, `_3` also present |
+| pr_begins_0 | string | the first day of the sentence; `pr_begins_1`, `_2`, `_3` also present  |
 
 **Inmate Details csv**
 
@@ -60,6 +58,34 @@ This is the personal information of each inmate.
 | home_county | string | each inmate's home county |
 | TDCJ_ID | int | unique identification number for each inmate |
 | proj_release_date | string | an inmate's projected release date |
+
+</details>
+
+<details>
+<summary>_Model Ready Dataset_</summary>
+
+>  [Model Ready Dataset](./datasets/my_data/complete_model_ready.csv)
+
+**Model Ready Dataset**
+
+This is the cleaned dataset with features ready to be trained. Steps that were taken are explained below in the process section of the README. These features have been added to the original dataset, and the descriptions below address added or altered features exclusively.
+
+17 types of crimes were categorized and made into dummy variables. The remaining crimes were distributed in a category called `other_crime`. Only one is represented in the dictionary below. Details about the categories are discussed in the `process` section of the README. Additionally, `101 prisons` were represented in the final dataset, and dummy variables were created. The base variable name is used to represent all below. `Ages` and `terms` were converted to floats and binned to be able to check each within the model. For both, the floats were used as features. Both are shown below.
+
+| Data | Type | Description |
+| --- | --- | :--- |
+| feature_crime | string | the inmate's initial offense (up to three priors) |
+| feature_startdate | datetime | when the sentence of the initial offense began |
+| feature_term | string | the years, months, and days of the inmate's term |
+| feature_commit_date | datetime | the date the offense was committed |
+| target_value | mixed | if there is a re-offense, the crime itself; if no re-offense, the int 0|
+| final_target | int | the y-value; ``{1:reoffend, 0:no re-offense}``|
+| theft_crime | int | ``{1: theft related crime, 0: not}`` |
+| prison_unit_ | int | ``{1: at this prison, 0: not}`` |
+| commit_age | float | the age of each inmate at the time the feature crime occurred |
+| feature_term_flt | float | the years, months, and days of each inmate's term in a numerical float |
+| term_binned_ | int | ``{1: remaining term in that range, 0: not}``; in years: `Less than 1`, `1_to_5`, `11_15`, `16_20`, `21_30`, `31_40`, `40+` |
+| age_binned_ | int | ``{1: age in that range, 0: not}``; under 18, then mostly 10-year increments, above 70 |
 
 </details>
 
