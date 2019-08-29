@@ -25,7 +25,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 **Data Dictionaries**
 
 Data Summary:
-- `40,214` unique inmates currently incarcerated in a Texas prison
+- `40,214` unique inmates incarcerated in a Texas prison as of 8-23-2019
 - `101` of the 108 total Texas prison facilities represented
 - each individual's current offense, and up to three additional priors
 - basic inmate identification s/a: home county, DOB, race, sex, & age
@@ -102,12 +102,12 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 </details>
 
 ## Process
-1. Research
+**1. Research
 2. Data Collection
 3. Cleaning, Feature Engineering, & EDA
 4. Model Fitting & Metrics
 5. Model Selection & Application
-6. Summary Statistics
+6. Summary Statistics**
 
 ## Process Details:
 ### Step 1: Research
