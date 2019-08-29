@@ -8,21 +8,24 @@ Is an inmate's initial crime and their age at the time it was committed predicti
 ### Goal:
 To create a model that predicts the likelihood of recidivism for an inmate in an attempt to support the efforts of any entity providing services for previously incarcerated individuals.
 
+
 ### Contents
 **In this Repository**
 
 | Name | Link | Description |
-| ---- | ---- | ----------- |
+| ---- | ---- | :---------- |
 | Slides (Aug 27, 2019) | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps |
 | Prep Code Notebooks | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
 | Project Code Notebooks | [Link](./Project_Notebooks) | EDA/Cleaning/Modeling/Summary Visualizations |
 | Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. The [Propublica COMPAS datasets](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) are also there for reference. |
 | Functions | [Link](./Project_Notebooks/inmate_scrape.py) | The final functions used to scrape and save data from the [Texas Tribune Prison Main Page](https://www.texastribune.org/library/data/texas-prisons/) |
 
+
 **Data Dictionaries**
 <details>
 <summary>Scraping/Initial CSVs</summary>
-[Link](./datasets/my_data/inmate_details_FINAL.csv)
+
+|[Link](./datasets/my_data/inmate_details_FINAL.csv)|
 [Priors Scrape csv](../datasets/my_data/priors_FINAL.csv)
 [Inmate Details csv](./datasets/my_data/inmate_details_FINAL.csv)
 [Merged csv](./datasets/my_data/complete_raw_df.csv) | This is the complete dataset used to begin the project
@@ -31,7 +34,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 | Data | Type | Description |
 | --- | --- | :--- |
 
-</details> 
+</details>
 
 ### Process
 1. Research
