@@ -103,7 +103,8 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 
 ## Process
 **1. Research**
- **2. Data Collection**
+
+**2. Data Collection**
 
 **3. Cleaning, Feature Engineering, & EDA**
 
@@ -127,7 +128,7 @@ From here I considered what data I might want, and I started looking into the Hu
 
 The Texas Tribune became the exclusive source of my data for this project. Through this website I learned I could access all prisons in the Texas System and each current inmate.
 
-### Data Collection
+### Step 2: Data Collection
 - Beautiful Soup
 - Amazon Web Services
 
@@ -145,4 +146,15 @@ This part of the project took an extensive amount of time and offered a great de
 - `47,500` unique inmate prior detail observations
 - merged dataset with `47,500 unique inmates`
 
-## Cleaning, Feature Engineering, & EDA
+#### Limitations of the Data:
+- Only scraped the 4 most recent crimes, rather than all, so some inmates `feature_crime` was not their actual initial crime (this was a choice I made based on my limitations of time, it is absolutely possible to acquire all priors for each inmate).
+- Only current inmates are represented in the dataset, this is missing individuals previously incarcerated that have not reoffended. These individuals would enhance the model.
+- There are many types of facilities represented in the Texas Tribune database (`State Jail`, `Prison`, `Work Program`, `Transfer Facility`). The non-prison units are not filtered out of this dataset.
+- No additional inmate information was acquired (ie: education, occupation, family information, etc).
+
+### Step 3: Cleaning, Feature Engineering, & EDA
+> What do I need?
+
+> What can I actually do?
+
+> How can I make this happen?
