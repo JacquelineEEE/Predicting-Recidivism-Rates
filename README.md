@@ -23,6 +23,12 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 
 **Data Dictionaries**
+Data Summary:
+- `40,214` unique inmates currently incarcerated in a Texas prison
+- `101` of the 108 total Texas prison facilities represented
+- each individual's current offense, and up to three additional priors
+- basic inmate identification s/a: home county, DOB, race, sex, & age
+
 <details>
 <summary> Scraping/Initial Datasets </summary>
 
@@ -94,7 +100,7 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 
 </details>
 
-### Process
+## Process
 1. Research
 2. Data Collection
 3. Cleaning, Feature Engineering, & EDA
@@ -103,15 +109,16 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 6. Summary Statistics
 
 
-## Research
+### Research
 I began this project by looking into available government datasets. I also found Probublica's work exposing racial bias in the COMPAS algorithm (kaggle and research/explanatory articles). This allowed me to gain access to their process,  their notebooks of work, and their datasets.
 
 From here I considered what data I might want, and I started looking into the Huntsville State Penitentiary.
 
 The Texas Tribune became the exclusive source of my data for this project. Through this website I learned I could access all prisons in the Texas System and each current inmate.
 
-## Data Collection
-> Beautiful Soup | Amazon Web Services
+### Data Collection
+- Beautiful Soup
+- Amazon Web Services
 
 This part of the project took an extensive amount of time and offered a great deal of learning opportunity. Creating effective, efficient, and intentional functions to scrape the data needed was a days-long process of trial and error.
 
