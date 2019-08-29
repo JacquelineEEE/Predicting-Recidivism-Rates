@@ -122,13 +122,23 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 
 > What can I actually obtain?
 
+<details>
+<summary> Click for Research Details </summary>
+
 I began this project by looking into available government datasets. I also found Probublica's work exposing racial bias in the COMPAS algorithm (kaggle and research/explanatory articles). This allowed me to gain access to their process,  their notebooks of work, and their datasets.
 
 From here I considered what data I might want, and I started looking into the Huntsville State Penitentiary.
 
 The Texas Tribune became the exclusive source of my data for this project. Through this website I learned I could access all prisons in the Texas System and each current inmate.
 
+</details>
+
 ### Step 2: Data Collection
+> Now that I found it, how in the world am I going to get it?
+
+<details>
+<summary> Click for Data Collection Details </summary>
+
 - Beautiful Soup
 - Amazon Web Services
 
@@ -151,6 +161,8 @@ This part of the project took an extensive amount of time and offered a great de
 - Only current inmates are represented in the dataset, this is missing individuals previously incarcerated that have not reoffended. These individuals would enhance the model.
 - There are many types of facilities represented in the Texas Tribune database (`State Jail`, `Prison`, `Work Program`, `Transfer Facility`). The non-prison units are not filtered out of this dataset.
 - No additional inmate information was acquired (ie: education, occupation, family information, etc).
+
+</details>
 
 ### Step 3: Cleaning, Feature Engineering, & EDA
 > What do I need?
