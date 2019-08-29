@@ -123,7 +123,7 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 > What can I actually obtain?
 
 <details>
-<summary> Click for Research Details </summary>
+<summary> **Research Details** </summary>
 
 I began this project by looking into available government datasets. I also found Probublica's work exposing racial bias in the COMPAS algorithm (kaggle and research/explanatory articles). This allowed me to gain access to their process,  their notebooks of work, and their datasets.
 
@@ -137,7 +137,7 @@ The Texas Tribune became the exclusive source of my data for this project. Throu
 > Now that I found it, how in the world am I going to get it?
 
 <details>
-<summary> Click for Data Collection Details </summary>
+<summary> **Data Collection Details** </summary>
 
 - Beautiful Soup
 - Amazon Web Services
