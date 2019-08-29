@@ -67,7 +67,7 @@ This is the personal information of each inmate.
 </details>
 
 <details>
-<summary>_Model Ready Dataset_</summary>
+<summary> _Model Ready Dataset_ </summary>
 
 >  [Model Ready Dataset](./datasets/my_data/complete_model_ready.csv)
 
@@ -75,7 +75,7 @@ This is the personal information of each inmate.
 
 This is the `cleaned dataset` with features ready to be trained. Steps that were taken are explained below in the `process section` of the README. These features have been added to the original dataset, and the descriptions below address added or altered features exclusively.
 
-17 types of crimes were categorized and made into dummy variables. The remaining crimes were distributed in a category called `other_crime`. Only one is represented in the dictionary below. Details about the categories are discussed in the `process` section of the README. Additionally, `101 prisons` were represented in the final dataset, and dummy variables were created. The base variable name is used to represent all below. `Ages` and `terms` were converted to floats and binned to be able to check each within the model. For both, the floats were used as features. 
+17 types of crimes were categorized and made into dummy variables. The remaining crimes were distributed in a category called `other_crime`. Only one is represented in the dictionary below. Details about the categories are discussed in the `process` section of the README. Additionally, `101 prisons` were represented in the final dataset, and dummy variables were created. The base variable name is used to represent all below. `Ages` and `terms` were converted to floats and binned to be able to check each within the model. For both, the floats were used as features.
 
 | Data | Type | Description |
 | --- | --- | :--- |
