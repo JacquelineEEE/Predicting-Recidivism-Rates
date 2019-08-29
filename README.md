@@ -23,6 +23,7 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 
 **Data Dictionaries**
+
 Data Summary:
 - `40,214` unique inmates currently incarcerated in a Texas prison
 - `101` of the 108 total Texas prison facilities represented
@@ -90,7 +91,7 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 | feature_term | string | the years, months, and days of the inmate's term |
 | feature_commit_date | datetime | the date the offense was committed |
 | target_value | mixed | if there is a re-offense, the crime itself; if no re-offense, the int 0|
-| final_target | int | the y-value; ``{1:reoffend, 0:no re-offense}``|
+| final_target | int | the y-value; ``{1: reoffend, 0: no re-offense}``|
 | theft_crime | int | ``{1: theft related crime, 0: not}`` |
 | prison_unit_ | int | ``{1: at this prison, 0: not}`` |
 | commit_age | float | the age of each inmate at the time the feature crime occurred |
@@ -108,8 +109,10 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 5. Model Selection & Application
 6. Summary Statistics
 
+## Process Details:
+### Step 1: Research
+> What data do I want? What data is available? What can I actually obtain?
 
-### Research
 I began this project by looking into available government datasets. I also found Probublica's work exposing racial bias in the COMPAS algorithm (kaggle and research/explanatory articles). This allowed me to gain access to their process,  their notebooks of work, and their datasets.
 
 From here I considered what data I might want, and I started looking into the Huntsville State Penitentiary.
