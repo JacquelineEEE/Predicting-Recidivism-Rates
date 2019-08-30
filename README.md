@@ -161,6 +161,10 @@ This part of the project took an extensive amount of time and offered a great de
 - Only current inmates are represented in the dataset, this is missing individuals previously incarcerated that have not reoffended. These individuals would enhance the model.
 - There are many types of facilities represented in the Texas Tribune database (`State Jail`, `Prison`, `Work Program`, `Transfer Facility`). The non-prison units are not filtered out of this dataset.
 - No additional inmate information was acquired (ie: education, occupation, family information, etc).
+- There were some (`very few`) errors found in the original data, and some questionable data that I could not conclusively confirm or disprove:
+        - one inmate's DOB and and the date of their first offense is the same
+        - some term lengths were invalid (`'2012 years, 8 months, 16 days'`)
+        - the minimum age for first offense was 11 years old - I was unable to confirm if this is accurate, but it opened the door for the potential of incorrectly imputed information in the original dataset
 
 </details>
 
@@ -182,6 +186,23 @@ This is a sample of what some of the unique terms, as strings, were:
 
 
 ![Unique Terms](./images/unique_terms.png)
+
+**Goal:** To convert these terms to accurate floats.
+**Steps to solving this problem:**
+1. Remove observations with clear errors, such as `'2012 years, 8 months', 16 days`
+> There were two of these instances discovered
+
+2. Remove observations including `'Life'`, `'Life Without Parole'`, `'Death'`
+3. Creating a list of the remaining terms (`40,214` observations remaining) that are `split on the comma`
+4. `Indexing` into the terms, removing the letters and spaces, adding periods in the appropriate space to set up the float, and `converting each to a float`.
+5. Dividing any number associated with months by 12 and any number associated with days by 365.
+6. Adding the corrected months and days to the years in index[0].
+7. Creating a new list consisting of only index[0].
+8. `df['feature_term_flt'] = new_list`
+
+#### Crime Categories:
+**Goal**: With `9005 unique feature crimes`, it felt important to create meaningful and categories to utilize as features.
+**Steps to solving the problem:**
 
 
 </details>
