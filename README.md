@@ -102,17 +102,9 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 </details>
 
 ## Process
-**1. Research**
 
-**2. Data Collection**
 
-**3. Cleaning, Feature Engineering, & EDA**
-
-**4. Model Fitting & Metrics**
-
-**5. Model Selection & Application**
-
-**6. Summary Statistics**
+**6. Findings & Applications**
 
 ## Process Details:
 ### Step 1: Research
@@ -216,20 +208,20 @@ This is a sample of what some of the unique terms, as strings, were:
 
 > Best Parameters
 
-> Interpreting Results
+> Results
 
 <details>
 <summary> Modeling </summary>
 I tried modeling SVC, Random Forest, and Logistic Regression. SVC and Random Forest were chosen based on research about modeling imbalanced classes. Logistic Regression was chosen for the opportunity to interpret coefficients. The highest training score of the three was `Random Forest.`
 
 **Random Forest Details**
-`Best accuracy score: .775`
-`Best params: {max_depth= 10,
+- `Best accuracy score: .775`
+- `Best params: {max_depth= 10,
                min_samples_leaf= 1,
                min_samples_split=4,
                N_estimators=150}`
-`Precision: {0: .65, 1: .79}`
-`Recall: {0: .25, 1: .95}`
+- `Precision: {0: .65, 1: .79}`
+- `Recall: {0: .25, 1: .95}`
 
 A single decision tree in the random forest (modified `max_depth = 4` for visual accessibility):
 ![Decision Tree](./images/single_tree.png)         
