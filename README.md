@@ -203,6 +203,35 @@ This is a sample of what some of the unique terms, as strings, were:
 #### Crime Categories:
 **Goal**: With `9005 unique feature crimes`, it felt important to create meaningful and categories to utilize as features.
 **Steps to solving the problem:**
+1. Visual search for common words
+2. Create functions to apply/make new feature columns {`1: this category, 0: not`}
+3. Create `other_crime` category by adding all of the category columns together. If != 0, replace with 0. If 0 (meaning no other categories are flagged), replace with 1.
+4. Check crimes in other_crime category to add to current categories or create new ones.
 
+
+</details>
+
+### Step 4: Modeling
+> Model Selection
+
+> Best Parameters
+
+> Interpreting Results
+
+<details>
+<summary> Modeling </summary>
+I tried modeling SVC, Random Forest, and Logistic Regression. SVC and Random Forest were chosen based on research about modeling imbalanced classes. Logistic Regression was chosen for the opportunity to interpret coefficients. The highest training score of the three was `Random Forest.`
+
+**Random Forest Details**
+`Best accuracy score: .775`
+`Best params: {max_depth= 10,
+               min_samples_leaf= 1,
+               min_samples_split=4,
+               N_estimators=150}`
+`Precision: {0: .65, 1: .79}`
+`Recall: {0: .25, 1: .95}`
+
+A single decision tree in the random forest (modified `max_depth = 4` for visual accessibility):
+![Decision Tree](./images/single_tree.png)         
 
 </details>
