@@ -201,6 +201,7 @@ This is a sample of what some of the unique terms, as strings, were:
 4. Check crimes in other_crime category to add to current categories or create new ones.
 
 
+
 </details>
 
 ### Step 4: Modeling
@@ -212,7 +213,7 @@ This is a sample of what some of the unique terms, as strings, were:
 
 <details>
 <summary> Modeling </summary>
-I tried modeling SVC, Random Forest, and Logistic Regression. SVC and Random Forest were chosen based on research about modeling imbalanced classes. Logistic Regression was chosen for the opportunity to interpret coefficients. The highest training score of the three was `Random Forest.`
+I tried modeling SVC, Random Forest, and Logistic Regression. SVC and Random Forest were chosen based on research about modeling imbalanced classes. Logistic Regression was chosen for the opportunity to interpret coefficients. The highest training score of the three was `Random Forest`.
 
 **Random Forest Details**
 - `Best accuracy score: .775`
@@ -227,3 +228,34 @@ A single decision tree in the random forest (modified `max_depth = 4` for visual
 ![Decision Tree](./images/single_tree.png)         
 
 </details>
+
+### Step 5: Findings & Applications
+> Model Selection
+
+> Best Parameters
+
+> Results
+
+<details>
+<summary> Findings & Applications </summary>
+
+1. Probability Range from `.12 to .98`
+![Probability Range](./images/probas_range.png)
+
+2. Probabilities of reoffense based on inmate replace
+![Probability Race Range](.images/probas_race.png)
+
+3. Practical application:
+- Filter by location of interest (ie - `prison unit`)
+- Filter by probability range of interest (ie - `.30 - .70`)
+- Filter by projected release date (ie `1 year from today`)
+
+</details>
+
+
+### Step 5: Opportunities for Improvement
+> How to make the model better
+
+
+<details>
+<summary> Opportunities for Improvement </summary>
