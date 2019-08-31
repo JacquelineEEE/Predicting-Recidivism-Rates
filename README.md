@@ -101,10 +101,7 @@ This is the `cleaned dataset` with features ready to be trained. Steps that were
 
 </details>
 
-## Process
 
-
-**6. Findings & Applications**
 
 ## Process Details:
 ### Step 1: Research
