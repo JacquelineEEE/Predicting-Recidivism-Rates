@@ -256,3 +256,9 @@ A single decision tree in the random forest (modified `max_depth = 4` for visual
 
 <details>
 <summary> Opportunities for Improvement </summary>
+
+ I think it might improve the model to collect all priors for each inmate, rather than only going back to the most recent three. Even if the scores did not improve, it would still be an improved/more complete dataset this way.
+
+The accuracy score for Random Forest was .775, and the recall score for predicting the 0 class (non-reoffenders) was only .29. I think expanding the feature engineering, and potentially collected data that has a stronger correlation might improve the model's prediction of non-reoffenders. I hit roadblocks in determining what, specifically, that data would be, and then if/how I would be able to capture it.
+
+While there is currently some signal, the overall accuracy score is only 3% higher than if the model were to exclusively predict reoffense. There is certainly room for improvement with the model. 
