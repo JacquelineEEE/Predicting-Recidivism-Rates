@@ -236,13 +236,13 @@ A single decision tree in the random forest (modified `max_depth = 4` for visual
 <details>
 <summary> Findings & Applications </summary>
 
-1. Probability Range from `.12 to .98`
+1. **Probability Range from `.12 to .98`**
 ![Probability Range](./images/probas_range.png)
 
-2. Probabilities of reoffense based on inmate race
+2. **Probabilities of reoffense based on inmate race**
 ![Probability Race Range](./images/probas_race.png)
 
-3. Practical application:
+3. **Practical application:**
 - Filter by location of interest (ie - `prison unit`)
 - Filter by probability range of interest (ie - `.30 - .70`)
 - Filter by projected release date (ie `1 year from today`)
@@ -261,4 +261,4 @@ A single decision tree in the random forest (modified `max_depth = 4` for visual
 
 The accuracy score for Random Forest was .775, and the recall score for predicting the 0 class (non-reoffenders) was only .29. I think expanding the feature engineering, and potentially collected data that has a stronger correlation might improve the model's prediction of non-reoffenders. I hit roadblocks in determining what, specifically, that data would be, and then if/how I would be able to capture it.
 
-While there is currently some signal, the overall accuracy score is only 3% higher than if the model were to exclusively predict reoffense. There is certainly room for improvement with the model. 
+While there is currently some signal, the overall accuracy score is only 3% higher than if the model were to exclusively predict reoffense. There is certainly room for improvement with the model.
