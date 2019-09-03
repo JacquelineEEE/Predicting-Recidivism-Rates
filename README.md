@@ -239,8 +239,8 @@ A single decision tree in the random forest (modified `max_depth = 4` for visual
 1. Probability Range from `.12 to .98`
 ![Probability Range](./images/probas_range.png)
 
-2. Probabilities of reoffense based on inmate replace
-![Probability Race Range](.images/probas_race.png)
+2. Probabilities of reoffense based on inmate race
+![Probability Race Range](./images/probas_race.png)
 
 3. Practical application:
 - Filter by location of interest (ie - `prison unit`)
