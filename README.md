@@ -12,8 +12,8 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 ### Contents
 **In this Repository**
 
-| Name | Link | Description |
-| ---- | ---- | :---------- |
+| Name     | Link | Description |
+| :------- | ---- | :---------- |
 | Slides (8.27.19) | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps |
 | Prep Notebooks | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
 | Notebook 1 | [Link](./NB1_Compiling_Datasets.ipynb) | Merging the datasets from the different scrapes |
