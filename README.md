@@ -1,5 +1,5 @@
 # Predicting Recidivism Rates
-This work is designed to support entities offering services to formerly incarcerated individuals. The dataset consists of individuals currently incarcerated in the Texas Prison System.
+This work is designed to support entities offering services to formerly incarcerated individuals. The dataset consists of individuals currently incarcerated in the Texas Prison System. All work in the repo was done in Aug of 2019.
 
 
 ### Problem Statement:
@@ -14,12 +14,12 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 | Name     | Link | Description |
 | :------- | ---- | :---------- |
-| Slides (8.27.19) | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps |
-| Prep Notebooks | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
-| Notebook 1 | [Link](./NB1_Compiling_Datasets.ipynb) | Merging the datasets from the different scrapes |
-| Notebook 2 | [Link](./NB2_Feature_Engineering.ipynb) | EDA, cleaning, feature engineering (getting data model ready) |
-| Notebook 3 | [Link](./NB3_Modeling.ipynb) | Random Forest - fitting, confusion matrix, applying to test dataset |
-| Notebook 4 | [Link](./NB4_Test_Visualizations.ipynb) | Test data visualizations |
+| Slides | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps.  |
+| Prep NBs | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
+| NB 1 | [Link](./NB1_Compiling_Datasets.ipynb) | Merging the datasets from the different scrapes |
+| NB 2 | [Link](./NB2_Feature_Engineering.ipynb) | EDA, cleaning, feature engineering (getting data model ready) |
+| NB 3 | [Link](./NB3_Modeling.ipynb) | Random Forest - fitting, confusion matrix, applying to test dataset |
+| NB 4 | [Link](./NB4_Test_Visualizations.ipynb) | Test data visualizations |
 | Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. The [Propublica COMPAS datasets](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) are also there for reference. |
 | Images | [Link](./images) | images used in notebooks and README |
 | Functions | [Link](./inmate_scrape.py) | The final functions used to scrape and save data from the [Texas Tribune Prison Main Page](https://www.texastribune.org/library/data/texas-prisons/) |
@@ -214,7 +214,7 @@ This is a sample of what some of the unique terms, as strings, were:
 
 <details>
 <summary> Modeling </summary>
-I tried modeling SVC, Random Forest, and Logistic Regression. SVC and Random Forest were chosen based on research about modeling imbalanced classes. Logistic Regression was chosen for the opportunity to interpret coefficients. The highest training score of the three was `Random Forest`.
+I tried modeling SVC, Random Forest, and Logistic Regression. SVC and Random Forest were chosen based on research about modeling with imbalanced classes. Logistic Regression was chosen for the opportunity to interpret coefficients. The highest training score of the three was `Random Forest`.
 
 **Random Forest Details**
 - `Best accuracy score: .775`
