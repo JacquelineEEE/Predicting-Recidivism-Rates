@@ -14,13 +14,13 @@ To create a model that predicts the likelihood of recidivism for an inmate in an
 
 | Name     | Link | Description |
 | :------- | ---- | :---------- |
-| Slides | [Link](./Slides_Aug2019.pdf) | Process, Findings, Next Steps.  |
-| Prep NBs | [Link](./Prep_Notebooks) |Creating Functions, Scraping, etc. |
+| Slides | [Link](./Slides_Aug2019.pdf) | Process, findings, next steps  |
+| Prep NBs | [Link](./Prep_Notebooks) |Creating functions, scraping, etc. |
 | NB 1 | [Link](./NB1_Compiling_Datasets.ipynb) | Merging the datasets from the different scrapes |
 | NB 2 | [Link](./NB2_Feature_Engineering.ipynb) | EDA, cleaning, feature engineering (getting data model ready) |
 | NB 3 | [Link](./NB3_Modeling.ipynb) | Random Forest - fitting, confusion matrix, applying to test dataset |
 | NB 4 | [Link](./NB4_Test_Visualizations.ipynb) | Test data visualizations |
-| Datasets | [Link](./datasets) | Workflow from scrape, to cleaning, to feature engineering, to test set probability results. The [Propublica COMPAS datasets](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) are also there for reference. |
+| Datasets | [Link](./datasets) | Datasets for each step of the process from scrape to test predictions. The [Propublica COMPAS datasets](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) are also there for reference. |
 | Images | [Link](./images) | images used in notebooks and README |
 | Functions | [Link](./inmate_scrape.py) | The final functions used to scrape and save data from the [Texas Tribune Prison Main Page](https://www.texastribune.org/library/data/texas-prisons/) |
 
